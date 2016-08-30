@@ -13,7 +13,9 @@
   <div id="stories" ng-controller="NewsController as controller">
     <p ng-repeat="story in controller.stories">
       {{ story.headline }}
-      <button class="read_summary" ng-click="story.readSummary()">Read Summary</button>
+      <br>
+      <button class="read_summary" ng-click="story.readStory('summary')">Read Summary</button>
+      <button class="read_summary" ng-click="story.readStory('full')">Read Full story</button>
     </p>
   </div>
 
